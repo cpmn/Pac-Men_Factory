@@ -1,4 +1,4 @@
-# Welcom to my Pac-Men Factory
+# Welcome to my Pac-Men Factory
 <img src="./images/PacMan1.png">
 
 ## Description
