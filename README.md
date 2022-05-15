@@ -12,7 +12,7 @@
   <a href="https://github.com/cpmn" target="_blank">Author</a>
 </p>
 
-<hr>
+<br>
 
 
 ## :dart: Description ##
