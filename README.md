@@ -39,7 +39,7 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) in
 
 ```bash
 # Clone this project
-$ git clone https://github.com/cpmn/eyes-movement
+$ git clone https://github.com/cpmn/Pac-Men_Factory
 
 # Access
 $ cd eyes-movement
