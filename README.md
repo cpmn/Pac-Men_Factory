@@ -1,5 +1,5 @@
 # Welcome to my Pac-Men Factory
-<img src="./images/PacMan1.png">
+<img src="./images/PacMan1.png"  width="50" height="60">
 
 ## Description
 
