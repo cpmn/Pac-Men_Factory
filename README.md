@@ -1,5 +1,6 @@
+<div align="center" id="top"> <img src="./images/PacMan1.png"  width="100" height="100">   </dib>
 # Welcome to my Pac-Men Factory
-<img src="./images/PacMan1.png"  width="50" height="60">
+
 
 ## Description
 
