@@ -54,8 +54,8 @@ a {
 }
 
 #game {
-    width: 80%;    
-    height: 80%;
+    width: 70%;    
+    height: 70%;
     border: 10px double hotpink;    
     box-shadow: inset 0 0px 4px hotpink,     
      0 0px 5px hotpink, 

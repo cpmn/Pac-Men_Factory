@@ -4,11 +4,17 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="icon" href="./images/pacman.ico">
   </head>
-  <body>
+  <body>        
+
     <div id="container">
         <header>
             <h1> Welcome to PacMen Factory</h1>
         </header>
+        <img src="./images/soundOff.png" id="music-icon">
+
+        <audio id="pacman-sound" loop="loop">
+          <source src="music/pacman_beginning.mp3" type="audio/mp3" >
+        </audio>
         <div id="buttons">
             <a href="#" onclick='makeOne()'>Add PacMen</a>
             <a href="#" onclick='update()'>Start Game</a>
@@ -52,7 +58,7 @@
           <div id="n36" class="wall horizontal"></div>
           <div id="n37" class="wall horizontal"></div>
           <div id="n38" class="coin"></div>
-          <div id="n39" class="wall vertical">39</div>
+          <div id="n39" class="wall vertical"></div>
           <div id="n40" class="coin"></div>
           <div id="n41" class="coin"></div>
           <div id="n42" class="coin"></div>
@@ -103,7 +109,7 @@
           <div id="n69" class="coin"></div>
           <div id="n70" class="coin"></div>
           <div id="n71" class="coin"></div>
-          <div id="n72" class="wall vertical">72</div>
+          <div id="n72" class="wall vertical"></div>
           <div id="n73" class="coin"></div>
           <div id="n74" class="wall vertical"></div>
           <div id="n75" class="coin"></div>
@@ -137,6 +143,24 @@
             <p> Copyright © 2022 - MIT xPRO - Claudia Muñoz </p>
         </footer>
     </div>
+    <script>      
+      let musicIcon = document.getElementById("music-icon");
+      let music = document.getElementById("pacman-sound");     
+      
+      /*window.onload = function(){
+        music.play();
+      }*/
+      musicIcon.onclick = function() {
+        if (music.pause) {
+          music.play();
+          musicIcon.src = "./images/soundOn.png"
+        }else{
+          music.pause();
+          musicIcon.src = "./images/soundOff.png"
+        }
+      }
+
+    </script>
     <script src="./js/pacmen.js"></script>    
   </body>
 </html>
