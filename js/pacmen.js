@@ -28,7 +28,7 @@ function makePac() {
     newimg.style.position = 'absolute';        
 
     newimg.src = './images/PacMan1.png';        
-    newimg.width = 80;
+    newimg.width = 100;
         //
         // set position here 
         //

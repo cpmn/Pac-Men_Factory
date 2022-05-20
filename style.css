@@ -56,7 +56,7 @@ a {
 #game {
     width: 80%;    
     height: 80%;
-    border: 10px solid hotpink;    
+    border: 10px double hotpink;    
     box-shadow: inset 0 0px 4px hotpink,     
      0 0px 5px hotpink, 
      0 0px 10px coral;     
@@ -71,6 +71,7 @@ a {
 }
 #game > div {  
   text-align: center;
+  /*background-color: #FCCF00;*/
 }
 
 footer {
@@ -87,8 +88,9 @@ footer {
 }
 
 .wall {
-  background-color: hotpink;  
-  border: 2px solid hotpink;  
+  
+  
+  border: 2px double hotpink;  
   box-shadow: inset 0 0px 4px hotpink,     
    0 0px 5px hotpink, 
    0 0px 10px coral;  
@@ -96,9 +98,101 @@ footer {
   justify-content: center;
   align-content: center;
 }
+.vertical {
+  width: 10%;
+}
+.horizontal {
+  height: 15%;
+}
 
 .coin {
-  background-color: yellow;
-  border-radius: 50%;
+  background-color: rgb(218, 218, 29);
+  border-radius: 40%;
   transform: scale(0.3);
+  box-shadow: inset 0 0px 4px hotpink,     
+   0 0px 15px hotpink, 
+   0 0px 10px coral;
+}
+
+/*GHOSTs*/
+
+.blinky{ background-color: red;}
+.clyde{ background-color: orange;}
+.inky{ background-color: cyan;}
+.pinky{ background-color: pink;}
+
+.ghost{
+  border-radius: 100% 100% 0 0;
+  display: inline-block;
+  height: 80px;
+  margin: 10px;
+  position: relative;
+  width: 60px;
+}
+
+.eyes{
+  height: 60px;
+  left: 1.5%;
+  margin-left: 5px;
+  position: absolute;
+  width: 50px;
+  top: 20px;
+}
+
+.eye{
+  background: #fff;
+  border-radius: 100%;
+  height: 30px;
+  width: 20px;
+}
+
+.iris{
+  background: blue;
+  border-radius: 100%;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  top: 10px;
+}
+
+.leftEye{ float: left; }
+.leftEye .iris{ left: 5px; }
+
+.rightEye{float: right; }
+.rightEye .iris{ right: 5px; }
+
+.ghostTail{
+  background-repeat: repeat-x;
+  bottom: -20px;
+  height: 20px;
+  position: absolute;
+  width: 60px;
+}
+
+.blinky .ghostTail{
+  background:
+    linear-gradient(-45deg, transparent 75%, red 75%) 0 50%,
+    linear-gradient( 45deg, transparent 75%, red 75%) 0 50%;
+  background-size:20px 20px, 20px 20px;
+}
+
+.clyde .ghostTail{
+  background:
+    linear-gradient(-45deg, transparent 75%, orange 75%) 0 50%,
+    linear-gradient( 45deg, transparent 75%, orange 75%) 0 50%;
+  background-size:20px 20px, 20px 20px;
+}
+
+.inky .ghostTail{
+  background:
+    linear-gradient(-45deg, transparent 75%, cyan 75%) 0 50%,
+    linear-gradient( 45deg, transparent 75%, cyan 75%) 0 50%;
+  background-size:20px 20px, 20px 20px;
+}
+
+.pinky .ghostTail{
+  background:
+    linear-gradient(-45deg, transparent 75%, pink 75%) 0 50%,
+    linear-gradient( 45deg, transparent 75%, pink 75%) 0 50%;
+  background-size:20px 20px, 20px 20px;
 }
