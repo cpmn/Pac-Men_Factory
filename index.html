@@ -10,7 +10,7 @@
         <header>
             <h1> Welcome to PacMen Factory</h1>
         </header>
-        <img src="./images/soundOff.png" id="music-icon">
+        <img src="./images/soundOff.png" id="music-icon" />
 
         <audio id="pacman-sound" loop="loop">
           <source src="music/pacman_beginning.mp3" type="audio/mp3" >
@@ -145,13 +145,9 @@
     </div>
     <script>      
       let musicIcon = document.getElementById("music-icon");
-      let music = document.getElementById("pacman-sound");     
-      
-      /*window.onload = function(){
-        music.play();
-      }*/
+      let music = document.getElementById("pacman-sound");            
       musicIcon.onclick = function() {
-        if (music.pause) {
+        if (music.paused) {
           music.play();
           musicIcon.src = "./images/soundOn.png"
         }else{
@@ -159,7 +155,6 @@
           musicIcon.src = "./images/soundOff.png"
         }
       }
-
     </script>
     <script src="./js/pacmen.js"></script>    
   </body>

@@ -32,16 +32,17 @@ These are the list of currect improvements:
 
 :heavy_check_mark: Feature 1: As a Pac-men player I would like custom board similar as pacman game.\
 :heavy_check_mark: Feature 2: As a Pac-men player I would like to see the custom text with pacman font\
-:heavy_check_mark: Feature 3: As a Pac-men player I would like to play on a mobile.
+:heavy_check_mark: Feature 3: As a Pac-men player I would like to play on a mobile.\
+:heavy_check_mark: Feature 4: As a Pac-men player I would like to see the Ghosts.
 
 ### For future enhancemnts: ###
 
-:x: Feature 7: As a Pac-men player I would like to see the Ghosts.\
-:x: Feature 8: As a Pac-men player I would like to see Power tiles.\
-:x: Feature 8: As a Pac-men player I would like to play pacman game.
+:x: Feature 5: As a Pac-men player I would like to see Power tiles.\
+:x: Feature 6: As a Pac-men player I would like to play pacman game.
 
 ### Bugs for fix ###
-x: Issue 1: Wall should have a radius
+:x: Issue 1: Fix image look and feel, add radius
+:x: Issue 2: At multiple click in start button velocity increase.
 
 
 ## :rocket: Technologies ##

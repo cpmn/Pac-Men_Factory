@@ -19,6 +19,12 @@ function setToRandom(scale) {
 }
 
 function makePac() {
+
+
+    if (music.paused) {
+        music.play();
+        musicIcon.src = "./images/soundOn.png"
+      }
     // returns an object with random values scaled {x: 33, y: 21}
     let velocity = setToRandom(10); // {x:?, y:?}
     let position = setToRandom(200);
