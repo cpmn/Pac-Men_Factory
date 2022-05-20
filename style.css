@@ -1,48 +1,104 @@
+@font-face {
+  font-family: pac-font;
+  src: url(fonts/PAC-FONT.TTF);
+}
+
+@font-face {
+  font-family: emulogic;
+  src: url(fonts/emulogic.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
   background: #000000;
 }
-h1 {
-color: #FCCF00;
-font: 2em sans-serif;
-font-weight: bold;
-display: flex;
-justify-content: center;
+
+#container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+header {
+  width: 100%;
+  text-align: center;
 }
 
-button {
-  background-color: #0a0a0a; /* Green */
-  border: 5px solid #FCCF00;
+h1 {
   color: #FCCF00;
-  padding: 18px 32px;
+  font: 2em sans-serif;  
+  font-family: pac-font;
+  text-shadow:   
+  0 0 5px #ff0080,   
+  0 0 0px #ff0080, 
+  0 0 5px #ff0080; 
+  justify-content: center;
+}
+
+a {
+  background-color: #000000; 
+  color: #FCCF00;
+  padding: 18px 32px;  
   text-align: center;
-  font-weight:bold;    
-  text-decoration: underline;    
+  /*text-decoration: solid;*/
+  font-family: emulogic;   
   display: inline-block;
-  font-size: 16px;
+  font-size: 1em;
+  cursor: pointer;
+  text-shadow:   
+  0 0 5px #ff0080,   
+  0 0 0px #ff0080, 
+  0 0 5px #ff0080;  
+}
+
+#game {
+    width: 80%;    
+    height: 80%;
+    border: 10px solid hotpink;    
+    box-shadow: inset 0 0px 4px hotpink,     
+     0 0px 5px hotpink, 
+     0 0px 10px coral;     
+    border-radius: 25px;    
+    margin-top: 10px;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+#game > div {  
+  text-align: center;
 }
 
 footer {
-    display: flex;
-    color: #FCCF00;
-    justify-content: center;
-}
-#game {
-    border: 5px solid #FCCF00;
-    flex: 1;
-    margin-top: 20px;
-    position: relative;
+  display: flex;
+  color: #FCCF00;
+  justify-content: center;
+  font-family: emulogic;
 }
 
-#container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
 #buttons {
     display: flex;
     justify-content: center;
     height: 70px;
+}
+
+.wall {
+  background-color: hotpink;  
+  border: 2px solid hotpink;  
+  box-shadow: inset 0 0px 4px hotpink,     
+   0 0px 5px hotpink, 
+   0 0px 10px coral;  
+  position: relative;
+  justify-content: center;
+  align-content: center;
+}
+
+.coin {
+  background-color: yellow;
+  border-radius: 50%;
+  transform: scale(0.3);
 }
